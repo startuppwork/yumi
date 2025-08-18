@@ -69,14 +69,19 @@ body {
     color: white;
 }
 
-.logo-icon img {
-    width: 40px;   /* adjust size as needed */
-    height: 40px;  /* same as width to keep circle */
-    border-radius: 50%; /* makes it circular */
-    object-fit: cover;  /* ensures it doesn’t stretch */
+.logo-icon {
     display: inline-block;
+    margin-right: 8px; /* spacing before Yumigo text */
+}
+
+.logo-icon img {
+    width: 40px;   /* adjust size */
+    height: 40px;  /* same as width */
+    border-radius: 50%; /* makes it circular */
+    object-fit: cover;  /* crops image nicely */
     vertical-align: middle;
 }
+
 
 .nav-menu {
     display: flex;
@@ -1049,3 +1054,4 @@ body {
 ::-webkit-scrollbar-thumb:hover {
     background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
 }
+
