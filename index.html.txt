@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yumigo - Find Your Tribe, Join Your Vibe</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">🎯</span>
+                <span class="logo-text">Yumigo</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link active" data-page="home">Home</a></li>
+                <li><a href="#about" class="nav-link" data-page="about">About</a></li>
+                <li><a href="#features" class="nav-link" data-page="features">Features</a></li>
+                <li><a href="#groups" class="nav-link" data-page="groups">Groups</a></li>
+                <li><a href="#contact" class="nav-link" data-page="contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page 1: Home/Hero -->
+    <section class="page active" id="home">
+        <div class="hero-container">
+            <div class="hero-background">
+                <div class="floating-shape shape-1"></div>
+                <div class="floating-shape shape-2"></div>
+                <div class="floating-shape shape-3"></div>
+                <div class="floating-shape shape-4"></div>
+            </div>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Find Your <span class="gradient-text">Tribe</span>,<br>
+                        Join Your <span class="gradient-text">Vibe</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Connect with like-minded college students in your campus community. 
+                        Join interest-based groups and make genuine friendships that matter.
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" onclick="scrollToPage('groups')">
+                            <i class="fas fa-rocket"></i> Get Started
+                        </button>
+                        <button class="btn btn-secondary" onclick="scrollToPage('about')">
+                            <i class="fas fa-play"></i> Learn More
+                        </button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-card">
+                        <div class="card-header">
+                            <div class="user-avatar">👥</div>
+                            <div class="card-title">Your Campus Groups</div>
+                        </div>
+                        <div class="group-preview">
+                            <div class="group-item">
+                                <span class="group-emoji">🎮</span>
+                                <span class="group-name">Gaming Squad</span>
+                                <span class="group-count">24 members</span>
+                            </div>
+                            <div class="group-item">
+                                <span class="group-emoji">📚</span>
+                                <span class="group-name">Study Buddies</span>
+                                <span class="group-count">18 members</span>
+                            </div>
+                            <div class="group-item">
+                                <span class="group-emoji">🏔️</span>
+                                <span class="group-name">Adventure Club</span>
+                                <span class="group-count">31 members</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page 2: About -->
+    <section class="page" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why Yumigo?</h2>
+                <p class="section-subtitle">Made for students, by students</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-story">
+                        <h3>The Problem We Solve</h3>
+                        <p>Making genuine connections in college shouldn't be awkward library encounters or random WhatsApp groups that go nowhere. We know how hard it can be to find your people in a sea of faces.</p>
+                        
+                        <h3>Our Solution</h3>
+                        <p>Yumigo creates a structured, safe space where students can connect based on shared interests and vibes. Whether you want to gossip, learn, travel, or explore niche passions - we have a group for you.</p>
+                    </div>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Students Joined</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">Active Groups</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">10+</div>
+                            <div class="stat-label">Colleges</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="testimonial-card">
+                        <div class="quote-icon">"</div>
+                        <p class="testimonial-text">Finally, a way to make friends without awkward small talk in the library!</p>
+                        <div class="testimonial-author">- Future Yumigo Member</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page 3: Features -->
+    <section class="page" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why Students Love Yumigo</h2>
+                <p class="section-subtitle">Everything you need to find your perfect group</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Interest-Based Groups</h3>
+                    <p>Join the exact vibe you're looking for. No more random groups that don't match your energy.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏫</div>
+                    <h3>College-Exclusive</h3>
+                    <p>Only students from your college. Build connections within your trusted campus community.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🚀</div>
+                    <h3>Quick & Easy Signup</h3>
+                    <p>Fill a simple form, get matched instantly. Start connecting in minutes, not hours.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💬</div>
+                    <h3>Diverse Categories</h3>
+                    <p>From casual gossip to skill development to epic trips - find your perfect group type.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Safe & Organized</h3>
+                    <p>Verified members only. Clean, organized groups with clear purposes and guidelines.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Real Connections</h3>
+                    <p>Move beyond surface-level interactions. Build friendships that last beyond college.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page 4: Groups -->
+    <section class="page" id="groups">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Choose Your Group Type</h2>
+                <p class="section-subtitle">What vibe are you looking for?</p>
+            </div>
+            <div class="groups-grid">
+                <div class="group-card" data-group="chillfill">
+                    <div class="group-icon">😎</div>
+                    <h3>ChillFill</h3>
+                    <p>For the gossip lovers, meme sharers, and casual hangout enthusiasts. Perfect for stress relief and fun conversations.</p>
+                    <ul class="group-features">
+                        <li>Daily campus gossip</li>
+                        <li>Meme sharing</li>
+                        <li>Casual meetups</li>
+                        <li>Fun challenges</li>
+                    </ul>
+                    <button class="btn btn-group" onclick="joinGroup('chillfill')">
+                        <i class="fas fa-users"></i> Join ChillFill
+                    </button>
+                </div>
+                
+                <div class="group-card" data-group="skillhub">
+                    <div class="group-icon">🚀</div>
+                    <h3>SkillHub</h3>
+                    <p>Learn, teach, and grow together. Share knowledge, develop skills, and build your professional network.</p>
+                    <ul class="group-features">
+                        <li>Skill sharing sessions</li>
+                        <li>Study groups</li>
+                        <li>Project collaborations</li>
+                        <li>Career networking</li>
+                    </ul>
+                    <button class="btn btn-group" onclick="joinGroup('skillhub')">
+                        <i class="fas fa-rocket"></i> Join SkillHub
+                    </button>
+                </div>
+                
+                <div class="group-card" data-group="triptribe">
+                    <div class="group-icon">🏔️</div>
+                    <h3>TripTribe</h3>
+                    <p>Adventure awaits! Plan trips, explore new places, and create unforgettable memories with fellow travelers.</p>
+                    <ul class="group-features">
+                        <li>Group trip planning</li>
+                        <li>Budget travel tips</li>
+                        <li>Adventure activities</li>
+                        <li>Travel buddies</li>
+                    </ul>
+                    <button class="btn btn-group" onclick="joinGroup('triptribe')">
+                        <i class="fas fa-mountain"></i> Join TripTribe
+                    </button>
+                </div>
+                
+                <div class="group-card" data-group="custom">
+                    <div class="group-icon">✨</div>
+                    <h3>Custom Group</h3>
+                    <p>Have a unique interest or hobby? Create your own custom group and find others who share your passion.</p>
+                    <ul class="group-features">
+                        <li>Niche interests</li>
+                        <li>Hobby groups</li>
+                        <li>Special projects</li>
+                        <li>Custom activities</li>
+                    </ul>
+                    <button class="btn btn-group" onclick="joinGroup('custom')">
+                        <i class="fas fa-star"></i> Create Custom
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page 5: Contact -->
+    <section class="page" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Have questions? We're here to help!</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-details">
+                            <h4>Email Us</h4>
+                            <p>hello@yumigo.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">💬</div>
+                        <div class="contact-details">
+                            <h4>Chat With Us</h4>
+                            <p>Available 24/7 for student support</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">🏫</div>
+                        <div class="contact-details">
+                            <h4>Campus Representative</h4>
+                            <p>Want to bring Yumigo to your college?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="college" placeholder="Your College" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" placeholder="Your Message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-icon">🎯</span>
+                        <span class="logo-text">Yumigo</span>
+                    </div>
+                    <p>Find Your Tribe, Join Your Vibe</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#groups">Groups</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#" onclick="openModal('terms')">Terms & Conditions</a></li>
+                        <li><a href="#" onclick="openModal('privacy')">Privacy Policy</a></li>
+                        <li><a href="#" onclick="openModal('community')">Community Guidelines</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>For Colleges</h4>
+                    <ul>
+                        <li><a href="#">Campus Partnership</a></li>
+                        <li><a href="#">Student Representatives</a></li>
+                        <li><a href="#">Campus Events</a></li>
+                        <li><a href="#">Success Stories</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Yumigo. All rights reserved. Made with ❤️ for students.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div class="modal" id="termsModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Terms & Conditions</h3>
+                <span class="close" onclick="closeModal('terms')">&times;</span>
+            </div>
+            <div class="modal-body">
+                <h4>1. Acceptance of Terms</h4>
+                <p>By using Yumigo, you agree to these terms and conditions.</p>
+                
+                <h4>2. User Eligibility</h4>
+                <p>Yumigo is exclusively for verified college students. Users must provide valid college credentials.</p>
+                
+                <h4>3. Community Guidelines</h4>
+                <p>Users must maintain respectful behavior, avoid harassment, and follow group-specific rules.</p>
+                
+                <h4>4. Privacy & Safety</h4>
+                <p>We prioritize user safety and privacy. Report any inappropriate behavior immediately.</p>
+                
+                <h4>5. Group Participation</h4>
+                <p>Users can join multiple groups but must actively participate and respect group dynamics.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="privacyModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Privacy Policy</h3>
+                <span class="close" onclick="closeModal('privacy')">&times;</span>
+            </div>
+            <div class="modal-body">
+                <h4>Data Collection</h4>
+                <p>We collect only necessary information for group matching and communication.</p>
+                
+                <h4>Data Usage</h4>
+                <p>Your data is used solely for connecting you with relevant groups and improving our service.</p>
+                
+                <h4>Data Protection</h4>
+                <p>We implement industry-standard security measures to protect your personal information.</p>
+                
+                <h4>Data Sharing</h4>
+                <p>We never sell or share your personal data with third parties without explicit consent.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="communityModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Community Guidelines</h3>
+                <span class="close" onclick="closeModal('community')">&times;</span>
+            </div>
+            <div class="modal-body">
+                <h4>Be Respectful</h4>
+                <p>Treat all members with respect regardless of their background, interests, or opinions.</p>
+                
+                <h4>Stay On Topic</h4>
+                <p>Keep discussions relevant to your group's purpose and interests.</p>
+                
+                <h4>No Harassment</h4>
+                <p>Harassment, bullying, or inappropriate behavior will result in immediate removal.</p>
+                
+                <h4>Authentic Connections</h4>
+                <p>Be genuine in your interactions. Fake profiles or spam accounts are not permitted.</p>
+                
+                <h4>Safe Environment</h4>
+                <p>Help maintain a safe space for all students to express themselves freely.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
