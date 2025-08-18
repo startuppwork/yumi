@@ -81,6 +81,19 @@ body {
     object-fit: cover;  /* crops image nicely */
     vertical-align: middle;
 }
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;  /* makes circular */
+  object-fit: cover;
+}
+
 
 
 .nav-menu {
